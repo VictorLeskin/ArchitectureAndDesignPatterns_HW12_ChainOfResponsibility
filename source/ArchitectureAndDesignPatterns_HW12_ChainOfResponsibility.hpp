@@ -1,0 +1,10 @@
+///************************* OUTS HOMEWORK ****************************************
+#ifndef ARCHITECTUREANDDESIGNPATTERNS_HW12_CHAINOFRESPONSIBILITY_HPP
+#define ARCHITECTUREANDDESIGNPATTERNS_HW12_CHAINOFRESPONSIBILITY_HPP
+
+class ArchitectureAndDesignPatterns_HW12_ChainOfResponsibility
+{
+public:
+};
+
+#endif //#ifndef ARCHITECTUREANDDESIGNPATTERNS_HW12_CHAINOFRESPONSIBILITY_HPP
