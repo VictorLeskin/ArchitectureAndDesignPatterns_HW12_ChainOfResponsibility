@@ -22,8 +22,35 @@ add_executable(
 
   source/ArchitectureAndDesignPatterns_HW12_ChainOfResponsibility.hpp
   source/ArchitectureAndDesignPatterns_HW12_ChainOfResponsibility.cpp
+  source/iCommand.hpp
+  source/iCommand.cpp
+  source/cObject.hpp
+  source/cObject.cpp
+  source/cVector.hpp
+  source/cVector.cpp
+  source/cRNeighborhood.hpp
+  source/cRNeighborhood.cpp
+  source/cGameField.hpp
+  source/cGameField.cpp
+  source/cCollisionDetector.hpp
+  source/cCollisionDetector.cpp
+  source/cCollisionDetectorCommand.hpp
+  source/cCollisionDetectorCommand.cpp
+  source/cException.hpp
+  source/cException.cpp
+  source/cGameFieldPartition.hpp
+  source/cGameFieldPartition.cpp
 #add source file here
   source/tests/test_ArchitectureAndDesignPatterns_HW12_ChainOfResponsibility.cpp
+  source/tests/test_iCommand.cpp
+  source/tests/test_cObject.cpp
+  source/tests/test_cVector.cpp
+  source/tests/test_cRNeighborhood.cpp
+  source/tests/test_cGameField.cpp
+  source/tests/test_cCollisionDetector.cpp
+  source/tests/test_cCollisionDetectorCommand.cpp
+  source/tests/test_cException.cpp
+  source/tests/test_cGameFieldPartition.cpp
 #add test file here
 )
 
