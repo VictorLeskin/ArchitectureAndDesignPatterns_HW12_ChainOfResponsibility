@@ -9,9 +9,9 @@ cGameFieldPartition::cGameFieldPartition(const cGameField& gameField, int R, con
   : gf(&gameField)
 {
   if (gameField.dx() % R != 0)
-    throw(cException("A concept of reminders is too complex for me."));
+    throw(cException("A concept of reminders is too hard for me."));
   if (gameField.dx() % R != 0)
-    throw(cException("I said 'A concept of reminders is too complex for me.'"));
+    throw(cException("I said 'A concept of reminders is too hard for me.'"));
 
   if ((offset.x != 0) && (offset.x != R/2))
     throw(cException("Wropng x offset."));
@@ -30,4 +30,23 @@ cGameFieldPartition::cGameFieldPartition(const cGameField& gameField, int R, con
 cGameFieldPartition::cGameFieldPartition(const cGameField& gameField, int R)
   : cGameFieldPartition( gameField, R, cVector(0,0) )
 {
+}
+
+cRNeighborhood* cGameFieldPartition::RNeighborhood(const cVector& pos)
+{
+    for (cRNeighborhood& r : rNeighborhoods)
+        if (r.IsInside(pos))
+            return &r;
+
+    return nullptr;
+}
+
+
+cRNeighborhood* cGameFieldPartition::RNeighborhood(const cObject* obj)
+{
+    for (cRNeighborhood& r : rNeighborhoods)
+        if (r.contains(obj))
+            return &r;
+
+    return nullptr;
 }

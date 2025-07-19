@@ -7,3 +7,4 @@ void cCollisionDetectorCommand::Execute()
 {
   throw(cException("not implemented"));
 }
+

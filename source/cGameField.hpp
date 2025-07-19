@@ -2,6 +2,9 @@
 #ifndef CGAMEFIELD_HPP
 #define CGAMEFIELD_HPP
 
+#include "cObject.hpp"
+#include <vector>
+
 class cGameField
 {
 public:
@@ -9,6 +12,8 @@ public:
 
   int dx() const { return dx_; }
   int dy() const { return dy_; }
+
+
 protected:
   int dx_, dy_;
 };

@@ -20,6 +20,6 @@ public:
  
 TEST_F(test_cCollisionDetectorCommand, test_ctor )
 {
-  Test_cCollisionDetectorCommand t;
+  Test_cCollisionDetectorCommand t(nullptr,nullptr);
 }
 
