@@ -1,6 +1,7 @@
 ///************************* OUTS HOMEWORK ****************************************
 
 #include "cRNeighborhood.hpp"
+#include <algorithm>
 
 bool cRNeighborhood::IsInside(const cVector& pos) const
 {
